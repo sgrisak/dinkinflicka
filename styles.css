@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: flex-end;
+  max-width: 96px;
+  border: 1px solid red;
+  position: relative;
+}
+
+#count {
+  font-size: 48px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 10000;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  padding: 6px;
+  color: black;
+  text-align: center;
+}
+
+.bloom {
+  animation: blooms 0.1s forwards;
+}
+
+@keyframes blooms {
+  0% {
+    background: transparent;
+  }
+  25%,
+  100% {
+    background: white;
+  }
+}
+
+.showMe {
+  display: block;
+  background: white;
+}
+
+.numberDip {
+  transform-box: fill-box;
+  transform-origin: 0% 100%;
+  animation: numDip 0.25s linear;
+}
+
+@keyframes numDip {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  30%,
+  40% {
+    transform: rotate(10deg) translateX(5px) translateY(9px);
+  }
+}
+
+#increment {
+  max-width: 96px;
+}
+
+.shoppingCartBump {
+  margin-top: 40px;
+  margin-left: 80px;
+  padding: 40px;
+}
+
+.shoppingCart__dip {
+  transform-box: fill-box;
+  transform-origin: 20% 80%;
+  animation: dinkinflicka 0.25s linear;
+}
+
+@keyframes dinkinflicka {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  30%,
+  40% {
+    transform: rotate(5deg);
+  }
+}
+
+/* Crazy Cart */
+.shoppingCart__bumpin {
+  transform-box: fill-box;
+  transform-origin: 20% 80%;
+  animation: bumpin 1s linear infinite;
+}
+
+@keyframes bumpin {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+}
+
+.shoppingCart__bumpin-wheels1 {
+  transform-box: fill-box;
+  transform-origin: 20% 90%;
+  animation: bumpin-wheels1 1s linear infinite;
+}
+
+@keyframes bumpin-wheels1 {
+  0%,
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+  50% {
+    transform: translateX(1px) translateY(-1px);
+  }
+}
+
+.shoppingCart__bumpin-wheels2 {
+  transform-box: fill-box;
+  transform-origin: 20% 90%;
+  animation: bumpin-wheels2 1s linear infinite;
+}
+
+@keyframes bumpin-wheels2 {
+  0%,
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+  60% {
+    transform: translateX(1px) translateY(-6px);
+  }
+  70% {
+    transform: translateX(1px) translateY(-4px);
+  }
+}
